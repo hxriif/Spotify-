@@ -1,5 +1,6 @@
 
 
+import Sidebar from "@/components/Sidebar";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
@@ -28,11 +29,15 @@ export default function Home() {
 
 
   return (
-    <main className=" w-full  h-screen overflow-hidden  bg-black">
-      <div>accesss:{X}</div>
-      <div className="items-center">
-        {playlists.map((playlist)=><div key={playlist.id}>{playlist.name}</div>)}
+    <>
+    <main className="flex w-full  h-screen overflow-hidden  bg-black ">
+     <Sidebar/>
+     <div>
       </div>
     </main>
+    <div className="bg-white sticky bottom-0 w-full h-16 z-20 ">
+  <p>player</p>
+    </div>
+    </>
   )
 }
