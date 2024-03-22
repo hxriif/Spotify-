@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Playlist() {
+function Artist() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Playlist() {
   )
 }
 
-export default Playlist
+export default Artist
